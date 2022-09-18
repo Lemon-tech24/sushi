@@ -1,0 +1,156 @@
+@font-face {
+    font-family:caviar;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: cafe;
+    src: url(../fonts/LouisGeorgeCafe.ttf);
+}
+@font-face {
+font-family:geosans;
+src: url(../fonts/GeosansLight.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: cafe;
+}
+
+
+/* Navigation */
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.intro{
+
+    font-weight: 800;
+}
+ul li{
+    display:inline-block;
+    padding: 0 20px;
+}
+
+ul li a{
+    font-size: 30px;
+    color: black;
+    
+}
+a{
+    position: relative;
+}
+
+ul li a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: lightsalmon;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+ul li a:hover:after{
+    width: 100%; 
+    left: 0; 
+}
+
+.side-nav{
+    position: fixed;
+    display: none;
+    place-items: center;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: left .555s;
+    position: fixed;
+    background-color: var(--brown);
+}
+
+
+/* Content */
+
+.main-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+
+.title-container, .picture-sushi{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.title-container{
+    font-size: 55px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* footer */
+
+footer{ 
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    font-size: 20px;
+    color: black;
+    margin: 0 2rem;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: cafe;
+    font-weight: 500;
+}
+
+footer a:hover{
+    background-color: lightsalmon;
+    transition: 1.5s;
+  
+}
+
+i{
+    margin: 0 5px;
+}
+
+
+
+
+
